@@ -1,5 +1,10 @@
 import "./style.css";
-const helmets = [
+
+const DOMSelectors = {
+  display: document.querySelector(".display"),
+};
+
+const items = [
   {
     Name: "Star Wars Mandalorian Helmet",
     Image: "/create-task/public/",
@@ -63,16 +68,24 @@ const helmets = [
 ];
 
 function files() {
-  helmets.forEach((helmet) => {
+  items.forEach((item) => {
     DOMSelectors.display.insertAdjacentHTML(
       "afterbegin",
       `<div class="card" id="card">
-        <h2 class="Sorcerers">${helmet.Name}</h2>
+        <h2 class="headgear">${item.Name}</h2>
         <img
           class="image"
-          src="${helmet.Image}"
+          src="${item.Image}"
         />`
     );
   });
 }
-files(helmets);
+files(items);
+
+document.querySelector(".helmet").addEventListener("click", function () {
+  const helmetTrueFiles = items.filter((item) => item.Type === "Helmet");
+  helmetTrueFiles.forEach((helmetTrueFiles) => {
+    DOMSelectors.display.insertAdjacentHTML("afterbegin", ''
+    )
+  })
+})
