@@ -1,22 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Printing Files</title>
   </head>
   <body>
     <h1 class="title">The Armory</h1>
     <div id="options">
-<button class="helmet-btn">Helmets</button>
-<button class="weapon-btn">Weapons</button>
-<button class="all-btn">All Items</button>
+      <button class="top-btn" id="reset-btn">Reset</button>
+      <button class="top-btn" id="helmet-btn">Helmets</button>
+      <button class="top-btn" id="weapon-btn">Weapons</button>
+      <button class="top-btn" id="all-btn">All Items</button>
     </div>
     <div id="container">
-<section class="display"></section>
+      <section class="display" id="display"></section>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
