@@ -1,3 +1,7 @@
+.everything {
+  font-family: 'Jockey One', sans-serif;
+}
+
 .title {
   text-align: center;
   font-size: 70px;
@@ -21,11 +25,7 @@ justify-content: space-around;
 }
 
 .options {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 .display {
@@ -45,6 +45,9 @@ justify-content: space-around;
   font-size: 20px;
 }
 
+.download {
+  margin: 10px;
+}
 /* @keyframes mew {
   from {
     transform: rotate(0deg);
