@@ -32,7 +32,7 @@ const items = [
     Type: "Helmet",
   },
   {
-    Name: "Halo Infinte Master Chief Helmet",
+    Name: "Halo Infinite Master Chief Helmet",
     Image: "MasterCheif.webp",
     Type: "Helmet",
   },
