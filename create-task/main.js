@@ -109,7 +109,7 @@ function files() {
           class="image"
           src="${item.Image}"
         />
-        <button class="download" id="${item.Name}">Download Image</button>`
+        <button class="download" id="${item.Name}">Download File</button>`
     );
 
     document.getElementById(item.Name).onclick = () => {download(item.Name)}
