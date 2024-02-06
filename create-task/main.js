@@ -120,11 +120,3 @@ DOMSelectors.reset.onclick = clear
 
 files()
 
-/* document.querySelector(".helmet").addEventListener("click", function () {
-  const helmetTrueFiles = items.filter((item) => item.Type === "Helmet");
-  helmetTrueFiles.forEach((helmetTrueFiles) => {
-    DOMSelectors.display.insertAdjacentHTML("afterbegin", ''
-    )
-  })
-})
- */
