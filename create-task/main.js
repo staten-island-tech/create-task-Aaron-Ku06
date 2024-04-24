@@ -82,7 +82,7 @@ const readStorage = ()=> {
   return JSON.parse(localStorage.getItem("downloaded"))
 }
 
-const download = (name)=>{
+function download(name){
   console.log("Downloaded " + name)
   let stored = readStorage()
   if (!stored) localStorage.setItem("downloaded", JSON.stringify([name]))
@@ -96,7 +96,7 @@ const readDownloaded = ()=> {
   return readStorage() ? JSON.parse(localStorage.getItem("downloaded")) : []
 }
 
-function files() {
+function files(default_text_in_case_image_does_not_load_in) {
   items.forEach((item) => {
 
     if (readDownloaded().includes(item.Name)) return
@@ -108,6 +108,7 @@ function files() {
         <img
           class="image"
           src="${item.Image}"
+          alt="${default_text_in_case_image_does_not_load_in}"
         />
         <button class="download" id="${item.Name}">Download File</button>`
     );
@@ -118,5 +119,5 @@ function files() {
 
 DOMSelectors.reset.onclick = clear
 
-files()
+files("Weapon of the armory")
 
